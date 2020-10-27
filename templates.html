@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero-image {
+  background-image: url("/home/kumar/Downloads/first.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.text-block {
+  font-style: italic;
+  font-size: 200%;
+  position: absolute;
+  bottom: 50px;
+  right: 300px;
+  background-color: light-grey;
+  color: white;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+img.align-center {
+display: block;
+margin: 0px auto;}
+img.medium {
+width: 150px;
+height: 70px;}
+.middle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+.align-right {
+float: right;
+margin-left: 30px;}
+}
+img {
+  float: right;
+}
+</style>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+
+    <div>
+        <img class="align-center medium" src="/home/kumar/Downloads/megna_img.png" width="150px" height="50px"> <br />
+    </div>
+        <div class="navbar">
+          <a href="#contact us">Contact Us</a>
+          <a href="#about us">About Us</a>
+          <div class="dropdown">
+                <button class="dropbtn">Services
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Work Force Solution</a>
+                    <a href="#">Web Services</a>
+                    <a href="#">Technologies</a>
+                    <a href="#">Mobile</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+          <a href="#products">Products</a>
+          <a href="#home">Home</a>
+        </div>
+        </div>
+        <div class="text-block">
+        <marquee behavior="scroll" direction="right" scrollamount="10">Welcome to</marquee>
+        <marquee behavior="scroll" direction="right" scrollamount="10">Megna Super IT Solution</marquee>
+        </div>
+    </div>
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="/home/kumar/Downloads/2.jpg" style="width:100%">
+  <img class="mySlides" src="/home/kumar/Downloads/5.jpg" style="width:100%">
+  <img class="mySlides" src="/home/kumar/Downloads/3.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000);
+}
+</script>
+    <!--<p><img src="pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">ABOUT US We are <i>Modern, special, banding & marketing</i>Megna Super IT Solutions offers custom software development services on diverse technology platforms, Our mission is to help enterprises accelerate the adoption of new technologies, untangle complex issues that always emerge during digital evolution, and orchestrate ongoing innovation.</p>
+-->
+<p><img src="/home/kumar/Downloads/cmpny.jpeg"  alt="Magnolia" class="align-left" style="width:50%;height:50%;margin-right:600px;" />
+    ABOUT US <br> We are <i>Modern, special, banding & marketing</i>Megna Super IT Solutions offers custom software development services on diverse technology platforms, Our mission is to help enterprises accelerate the adoption of new technologies, untangle complex issues that always emerge during digital evolution, and orchestrate ongoing innovation.</p>
+
+</body>
+</html>
